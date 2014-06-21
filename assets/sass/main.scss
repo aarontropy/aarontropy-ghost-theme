@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto|Roboto+Slab);
+
+$light-grey: #ddd;
+$dark-grey: #224;
+$side-width: 20%;
+
+$menu-line-height: 1.5em;
+
+
+header.main {
+    width: $side-width;
+    height: 100%;
+    line-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+
+    h1.title {
+        text-align: center;
+        margin-top: 3em;
+        font-size: 2vw;
+    }
+
+    nav.menu {
+        position: absolute;
+        top: 50%;
+        margin-top: -3 * $menu-line-height / 2;
+        display: inline-block;
+        vertical-align: middle;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 3em;
+            li {
+                line-height: $menu-line-height;
+                a {
+                    color: $dark-grey;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    margin-left: $side-width;
+
+    article.post {
+        .post-title {
+        	font-family: 'Roboto', sans-serif;
+        	a, a:hover {
+        		text-decoration: none;
+        		color: $dark-grey;
+        	}
+
+        }
+
+        ul.post-meta {
+            list-style: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                border-right: 1px solid $light-grey;
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        .post-content {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .post-more {
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto|Roboto+Slab);
+header.main {
+  width: 20%;
+  height: 100%;
+  line-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  position: fixed; }
+  header.main h1.title {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 2vw; }
+  header.main nav.menu {
+    position: absolute;
+    top: 50%;
+    margin-top: -2.25em;
+    display: inline-block;
+    vertical-align: middle; }
+    header.main nav.menu ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 3em; }
+      header.main nav.menu ul li {
+        line-height: 1.5em; }
+        header.main nav.menu ul li a {
+          color: #222244;
+          text-decoration: none;
+          font-weight: bold; }
+
+main {
+  margin-left: 20%; }
+  main article.post .post-title {
+    font-family: 'Roboto', sans-serif; }
+    main article.post .post-title a, main article.post .post-title a:hover {
+      text-decoration: none;
+      color: #222244; }
+  main article.post ul.post-meta {
+    list-style: none;
+    margin: 0; }
+    main article.post ul.post-meta li {
+      display: inline-block;
+      border-right: 1px solid #dddddd; }
+      main article.post ul.post-meta li:last-child {
+        border: none; }
+  main article.post .post-content {
+    font-family: 'Roboto Slab', serif; }
