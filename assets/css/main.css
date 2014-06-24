@@ -4,10 +4,12 @@ header.main {
   height: 100%;
   line-height: 100%;
   font-family: 'Roboto', sans-serif;
-  position: fixed; }
+  margin-top: 200px;
+  position: fixed;
+  top: 0;
+  left: 0; }
   header.main h1.title {
     text-align: center;
-    margin-top: 3em;
     font-size: 2vw; }
   header.main nav.menu {
     position: absolute;
@@ -27,7 +29,10 @@ header.main {
           font-weight: bold; }
 
 main {
+  margin-top: 200px;
   margin-left: 20%; }
+  main img {
+    max-width: 100%; }
   main article.post .post-title {
     font-family: 'Roboto', sans-serif; }
     main article.post .post-title a, main article.post .post-title a:hover {
@@ -43,3 +48,35 @@ main {
         border: none; }
   main article.post .post-content {
     font-family: 'Roboto Slab', serif; }
+
+#red {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 400px;
+  top: -500px;
+  left: 200px;
+  background-color: rgba(207, 0, 20, 0.75);
+  border: 1px solid rgba(207, 0, 20, 0.8);
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  z-index: 100; }
+
+#blue {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 400px;
+  top: -505px;
+  left: 225px;
+  background-color: rgba(0, 3, 207, 0.75);
+  border: 1px solid rgba(0, 3, 207, 0.8);
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  z-index: 100; }

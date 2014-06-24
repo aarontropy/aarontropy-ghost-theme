@@ -12,11 +12,13 @@ header.main {
     height: 100%;
     line-height: 100%;
     font-family: 'Roboto', sans-serif;
+    margin-top: 200px;
     position: fixed;
+    top: 0;
+    left: 0;
 
     h1.title {
         text-align: center;
-        margin-top: 3em;
         font-size: 2vw;
     }
 
@@ -45,7 +47,12 @@ header.main {
 
 
 main {
+    margin-top: 200px;
     margin-left: $side-width;
+
+    img {
+        max-width: 100%;
+    }
 
     article.post {
         .post-title {
@@ -78,4 +85,51 @@ main {
 
         }
     }
+}
+
+
+#red {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 400px;
+
+    top: -500px;
+    left: 200px;
+
+    background-color: rgba(207,0,20,0.75);
+    border: 1px solid rgba(207,0,20,0.8);
+
+    $red-rotate: 60deg;
+    transform: rotate($red-rotate);
+    -webkit-transform: rotate($red-rotate);
+    -moz-transform: rotate($red-rotate);
+    -ms-transform: rotate($red-rotate);
+    -o-transform: rotate($red-rotate);
+
+
+    z-index: 100;
+}
+
+#blue {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 400px;
+
+    top: -505px;
+    left: 225px;
+
+    background-color: rgba(0,3,207,0.75);
+    border: 1px solid rgba(0,3,207,0.8);
+
+    $red-rotate: 60deg;
+    transform: rotate($red-rotate);
+    -webkit-transform: rotate($red-rotate);
+    -moz-transform: rotate($red-rotate);
+    -ms-transform: rotate($red-rotate);
+    -o-transform: rotate($red-rotate);
+
+
+    z-index: 100;
 }
